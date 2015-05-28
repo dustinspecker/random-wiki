@@ -32,3 +32,6 @@ randomWiki(function (err, topic) {
   //=> Monsters, Inc.
 });
 ```
+
+## License
+MIT © Dustin Specker
