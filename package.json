@@ -8,7 +8,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "node test"
+    "test": "ava"
   },
   "repository": {
     "type": "git",

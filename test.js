@@ -1,12 +1,14 @@
 'use strict';
-var randomWiki = require('./')
-  , test = require('ava');
+import randomWiki from './';
+import test from 'ava';
 
-test(function (t) {
+test(async t => {
+  let topic;
+
   t.plan(2);
 
-  randomWiki().then(function (topic) {
-    t.assert(typeof topic === 'string');
-    t.assert(topic.length > 0);
-  });
+  topic = await randomWiki();
+
+  t.assert(typeof topic === 'string');
+  t.assert(topic.length > 0);
 });
