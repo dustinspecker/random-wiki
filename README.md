@@ -32,7 +32,7 @@ $ npm install --save random-wiki
 ```js
 var randomWiki = require('random-wiki');
 
-randomWiki(function (err, topic) {
+randomWiki().then(function (topic) {
   console.log(topic);
   //=> Monsters, Inc.
 });
