@@ -3,10 +3,9 @@ var randomWiki = require('./')
   , test = require('ava');
 
 test(function (t) {
-  t.plan(3);
+  t.plan(2);
 
-  randomWiki(function (err, topic) {
-    t.assert(!err, err);
+  randomWiki().then(function (topic) {
     t.assert(typeof topic === 'string');
     t.assert(topic.length > 0);
   });

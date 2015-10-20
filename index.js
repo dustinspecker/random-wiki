@@ -2,20 +2,15 @@
 var cheerio = require('cheerio')
   , got = require('got');
 
-module.exports = function (cb) {
-  got('http://en.wikipedia.org/wiki/Special:Random', function (err, data) {
+module.exports = function () {
+  return got('http://en.wikipedia.org/wiki/Special:Random').then(function (response) {
     var $, title, topic;
 
-    if (err) {
-      cb(err);
-      return;
-    }
-
-    $ = cheerio.load(data);
+    $ = cheerio.load(response.body);
     // use title to prevent dealing with formatting (<i></i>)
     title = $('title').text();
     topic = title.substr(0, title.indexOf(' - Wikipedia, the free encyclopedia'));
 
-    cb(null, topic);
+    return Promise.resolve(topic);
   });
 };

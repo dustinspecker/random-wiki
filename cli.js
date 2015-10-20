@@ -9,10 +9,6 @@ meow({
         ].join('\n')
 });
 
-randomWiki(function (err, page) {
-  if (err) {
-    throw new Error(err.message);
-  }
-
+randomWiki().then(function (page) {
   console.log(page);
 });

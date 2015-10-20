@@ -26,7 +26,7 @@
   "homepage": "https://github.com/dustinspecker/random-wiki#readme",
   "dependencies": {
     "cheerio": "^0.19.0",
-    "got": "^3.2.0",
+    "got": "^5.0.0",
     "meow": "^3.1.0"
   },
   "devDependencies": {
