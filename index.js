@@ -11,6 +11,6 @@ module.exports = function () {
     title = $('title').text();
     topic = title.substr(0, title.indexOf(' - Wikipedia, the free encyclopedia'));
 
-    return Promise.resolve(topic);
+    return topic;
   });
 };
