@@ -3,11 +3,10 @@
 var meow = require('meow')
   , randomWiki = require('./');
 
-meow({
-  help: ['Example',
-         '  $ random-wiki'
-        ].join('\n')
-});
+meow([
+  'Example',
+  '  $ random-wiki'
+]);
 
 randomWiki().then(function (page) {
   console.log(page);
