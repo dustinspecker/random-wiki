@@ -1,7 +1,7 @@
 random-wiki
 ===========
 
-[![NPM version](https://badge.fury.io/js/random-wiki.svg)](http://badge.fury.io/js/random-wiki) [![Build Status](https://travis-ci.org/dustinspecker/random-wiki.svg?branch=master)](https://travis-ci.org/dustinspecker/random-wiki)
+[![NPM version](https://badge.fury.io/js/random-wiki.svg)](http://badge.fury.io/js/random-wiki) [![Build Status](https://travis-ci.org/dustinspecker/random-wiki.svg?branch=master)](https://travis-ci.org/dustinspecker/random-wiki) [![Coverage Status](https://coveralls.io/repos/dustinspecker/random-wiki/badge.svg?branch=master&service=github)](https://coveralls.io/github/dustinspecker/random-wiki?branch=master)
 
 [![Code Climate](https://codeclimate.com/github/dustinspecker/random-wiki/badges/gpa.svg)](https://codeclimate.com/github/dustinspecker/random-wiki) [![Dependencies](https://david-dm.org/dustinspecker/random-wiki.svg)](https://david-dm.org/dustinspecker/random-wiki/#info=dependencies&view=table) [![DevDependencies](https://david-dm.org/dustinspecker/random-wiki/dev-status.svg)](https://david-dm.org/dustinspecker/random-wiki/#info=devDependencies&view=table)
 
