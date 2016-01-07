@@ -7,6 +7,6 @@ test(async t => {
 
   topic = await randomWiki();
 
-  t.assert(typeof topic === 'string');
-  t.assert(topic.length > 0);
+  t.is(typeof topic, 'string');
+  t.ok(topic.length > 0);
 });
