@@ -4,9 +4,9 @@ var cheerio = require('cheerio')
 
 module.exports = function () {
   return got('http://en.wikipedia.org/wiki/Special:Random').then(function (response) {
-    var $, title;
+    var $ = cheerio.load(response.body)
+      , title;
 
-    $ = cheerio.load(response.body);
     // use title to prevent dealing with formatting (<i></i>)
     title = $('title').text();
     return title.substr(0, title.indexOf(' - Wikipedia, the free encyclopedia'));
