@@ -8,5 +8,5 @@ test(async t => {
   topic = await randomWiki();
 
   t.is(typeof topic, 'string');
-  t.ok(topic.length > 0);
+  t.truthy(topic.length > 0);
 });
