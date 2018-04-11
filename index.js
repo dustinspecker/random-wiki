@@ -1,14 +1,14 @@
-'use strict';
-var cheerio = require('cheerio')
-  , got = require('got');
+"use strict";
+var got = require("got");
 
-module.exports = function () {
-  return got('http://en.wikipedia.org/wiki/Special:Random').then(function (response) {
-    var $ = cheerio.load(response.body)
-      , title;
-
-    // use title to prevent dealing with formatting (<i></i>)
-    title = $('title').text();
-    return title.substr(0, title.indexOf(' - Wikipedia, the free encyclopedia'));
-  });
+module.exports = function() {
+  return got(
+    "https://en.wikipedia.org/w/api.php?action=query&list=random&rnlimit=1&format=json&origin=*&rnnamespace=0"
+  )
+    .then(function(response) {
+      return JSON.parse(response.body).query.random[0].title;
+    })
+    .catch(function(error) {
+      console.error(error);
+    });
 };
