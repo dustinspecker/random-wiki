@@ -27,7 +27,7 @@
   "homepage": "https://github.com/dustinspecker/random-wiki#readme",
   "dependencies": {
     "got": "^8.3.0",
-    "meow": "^3.4.2"
+    "meow": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^0.14.0",
